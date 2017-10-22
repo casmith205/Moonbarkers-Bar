@@ -4,3 +4,7 @@
     background-size: cover;
     height: 100%;
 }
+
+.jumbotron {
+    opacity: 0.7;
+}
