@@ -1,7 +1,7 @@
 .main-content{
-    background-image: url(../img/happycoop.jpg);  
+    background-image: url(../img/mblogo.svg);  
     background-repeat: no-repeat ;
-    background-size: cover;
+    background-position: center;
     height: 100%;
 }
 
