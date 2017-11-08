@@ -6,7 +6,7 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">Moon Barkers</a>
+            <a class="navbar-brand nav-link" href="#home">Moon Barkers</a>
             <button class="navbar-toggler" type="button">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -14,27 +14,57 @@
             <div class="collapse navbar-collapse">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
+                  <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="faqs.html">FAQs</a>
+                  <a class="nav-link" href="#faqs">FAQs</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contactus.html">Contact Us</a>
+                  <a class="nav-link" href="#contactus">Contact Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="invest.html">Invest</a>
+                  <a class="nav-link" href="#invest">Invest</a>
                 </li>
               </ul>
             </div>
           </nav>
     <div class="main-content">
-            <div class="jumbotron">
-                    <h1>Moon Barkers</h1>
-                    <p class="lead">We like doggos and you should too!</p>
-                    <hr />
-                    <p>Learn more about how and why we like doggos.</p>
-                  </div>
+            <div id="home" class="site-section jumbotron">
+              <h1>Moon Barkers</h1>
+              <p class="lead">We like doggos and you should too!</p>
+              <hr />
+              <p>Learn more about how and why we like doggos.</p>
+            </div>
+            <div id="about" class="site-section jumbotron">
+              <h1>About</h1>
+              <p class="lead">We like doggos and you should too!</p>
+              <hr />
+              <p>Learn more about how and why we like doggos.</p>
+            </div>
+            <div id="faqs" class="site-section jumbotron">
+              <h1>FAQs</h1>
+              <p class="lead">We like doggos and you should too!</p>
+              <hr />
+              <p>Learn more about how and why we like doggos.</p>
+            </div>
+            <div id="contactus" class="site-section jumbotron">
+              <h1>Contact Us</h1>
+              <p class="lead">We like doggos and you should too!</p>
+              <hr />
+              <p>Learn more about how and why we like doggos.</p>
+            </div>
+            <div id="invest" class="site-section jumbotron">
+              <h1>Invest</h1>
+              <p class="lead">We like doggos and you should too!</p>
+              <hr />
+              <p>Learn more about how and why we like doggos.</p>
+            </div>
     </div>
+    <script src="../js/navigation.js"></script>
+    <script>
+      MoonBarkers.Navigation.init();
+      var hash = window.location.hash;
+      MoonBarkers.Navigation.showSection(hash);
+    </script>
   </body>
 </html>
