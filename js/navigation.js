@@ -15,6 +15,7 @@ MoonBarkers.Navigation = MoonBarkers.Navigation || (function(){
         evt.preventDefault();
         var elem = evt.target;
         var hashMark = elem.href.substring(elem.href.indexOf("#"));
+        window.location.hash = hashMark;
         showSection(hashMark);
         return false;
     }
