@@ -10,7 +10,8 @@ MoonBarkers.Navigation = MoonBarkers.Navigation || (function(){
             link.addEventListener("click", handleClick);   
         }
        var mobileNavButton = document.getElementById("mobileNavToggler");
-       mobileNavButton.addEventListener("click",mobileNavToggler);
+       mobileNavButton.addEventListener("click", mobileNavToggler);
+    
     };
 
     var handleClick = function(evt){
@@ -24,6 +25,8 @@ MoonBarkers.Navigation = MoonBarkers.Navigation || (function(){
 
     var mobileNavToggler = function(evt){
         console.log("mobileNavToggler clicked");
+        var navs = document.getElementById("nav-links");
+        navs.classList.add("show");
 
     }
 
