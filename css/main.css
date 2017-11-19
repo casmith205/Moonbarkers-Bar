@@ -1,8 +1,12 @@
+.background-image{
+    position: absolute;
+    z-index: 1;
+}
+
 .main-content{
-    background-image: url(../img/mblogo.svg);  
-    background-repeat: no-repeat ;
-    background-position: center;
-    height: 100%;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
 }
 
 .jumbotron {
