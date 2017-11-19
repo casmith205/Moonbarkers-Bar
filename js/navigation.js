@@ -19,12 +19,13 @@ MoonBarkers.Navigation = MoonBarkers.Navigation || (function(){
         return false;
     }
 
+    //handle showing clicked links and intially loaded page
     var showSection = function(hashMark){
         var sections = document.querySelectorAll(".site-section");
         for (var i=0; i < sections.length; i++){
             var section = sections[i];
             section.style.display = "none";
-            if(("#" + section.id) === hashMark){
+            if(("#" + section.id) === hashMark){ 
                 section.style.display = "";
             }
         }
