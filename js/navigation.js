@@ -26,8 +26,14 @@ MoonBarkers.Navigation = MoonBarkers.Navigation || (function(){
     var mobileNavToggler = function(evt){
         console.log("mobileNavToggler clicked");
         var navs = document.getElementById("nav-links");
-        navs.classList.add("show");
-
+        var showClass = "show";
+        if(navs.classList.contains(showClass)){
+            navs.classList.remove(showClass);
+        }
+        else
+        {
+         navs.classList.add(showClass);
+        }
     }
 
     //handle showing clicked links and intially loaded page
