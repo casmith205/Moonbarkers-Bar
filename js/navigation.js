@@ -7,8 +7,10 @@ MoonBarkers.Navigation = MoonBarkers.Navigation || (function(){
         var links = document.querySelectorAll(".nav-link");
         for (var i=0; i < links.length; i++){
             var link = links[i];
-            link.addEventListener("click", handleClick);
+            link.addEventListener("click", handleClick);   
         }
+       var mobileNavButton = document.getElementById("mobileNavToggler");
+       mobileNavButton.addEventListener("click",mobileNavToggler);
     };
 
     var handleClick = function(evt){
@@ -18,6 +20,11 @@ MoonBarkers.Navigation = MoonBarkers.Navigation || (function(){
         window.location.hash = hashMark;
         showSection(hashMark);
         return false;
+    }
+
+    var mobileNavToggler = function(evt){
+        console.log("mobileNavToggler clicked");
+
     }
 
     //handle showing clicked links and intially loaded page
