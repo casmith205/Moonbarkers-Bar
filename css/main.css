@@ -17,6 +17,12 @@
     opacity: 0.92;
 }
 
+.faq-question {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: gray 1px solid;
+}
+
 p > a:hover{
     color: #d9d9d9;
     text-decoration:  underline;
