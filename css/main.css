@@ -1,16 +1,13 @@
-.background-image{
-    position: absolute;
-    width: 100%;
-}
-
-.background-image img {
-   margin: auto;
-   display: block; 
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
 .main-content{
     width: 100%;
     min-height: 100%;
+    background: url(../img/mblogo.svg);
+    background-size: 100% 100%;
 }
 
 .jumbotron {
