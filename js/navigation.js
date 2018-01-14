@@ -38,6 +38,9 @@ MoonBarkers.Navigation = MoonBarkers.Navigation || (function(){
 
     //handle showing clicked links and intially loaded page
     var showSection = function(hashMark){
+        if(!hashMark){
+            hashMark="#home";
+        }
         var sections = document.querySelectorAll(".site-section");
         for (var i=0; i < sections.length; i++){
             var section = sections[i];
