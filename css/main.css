@@ -1,6 +1,5 @@
 .background-image{
     position: absolute;
-    z-index: 1;
     width: 100%;
 }
 
@@ -10,17 +9,13 @@
 }
 
 .main-content{
-    position: absolute;
-    z-index: 2;
     width: 100%;
+    min-height: 100%;
 }
 
 .jumbotron {
     opacity: 0.92;
 }
-
-@import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 p > a:hover{
     color: #d9d9d9;
@@ -45,9 +40,8 @@ ul {
     list-style: none;
 }
 .footer-social-icons {
-    width: 350px;
-    display:block;
-    margin: 0 auto;
+    width: 100%;
+    text-align: center;
 }
 .social-icon {
     color: #fff;
